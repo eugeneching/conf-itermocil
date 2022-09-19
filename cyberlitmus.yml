@@ -1,0 +1,17 @@
+windows:
+  - name: cyberlitmus
+    root: ~/dev
+    layout: tiled
+    panes:
+      - commands:
+        - cd ~/dev-cyberlitmus/cyberlitmus-services
+        - git switch main
+        - scripts/run.sh
+      - commands:
+        - cd ~/dev-cyberlitmus/cyberlitmus-services
+      - commands:
+        - cd ~/dev-cyberlitmus/cyberlitmus-web
+        - git switch main
+        - scripts/run.sh
+      - commands:
+        - cd ~/dev-cyberlitmus/cyberlitmus-web

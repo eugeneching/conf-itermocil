@@ -1,0 +1,17 @@
+windows:
+  - name: microcourse
+    root: ~/dev
+    layout: tiled
+    panes:
+      - commands:
+        - cd ~/dev-cyberlitmus/microcourse-services
+        - git switch main
+        - scripts/run.sh
+      - commands:
+        - cd ~/dev-cyberlitmus/microcourse-services
+      - commands:
+        - cd ~/dev-cyberlitmus/microcourse-web
+        - git switch main
+        - scripts/run.sh
+      - commands:
+        - cd ~/dev-cyberlitmus/microcourse-web
