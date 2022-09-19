@@ -1,0 +1,18 @@
+windows:
+  - name: pcdreams
+    root: ~/dev
+    layout: tiled
+    panes:
+      - commands:
+        - cd ~/dev/pcdreams/pcd-services-web
+        - git switch master
+        - scripts/run.sh
+      - commands:
+        - cd ~/dev/pcdreams/pcd-services-web
+      - commands:
+        - cd ~/dev/pcdreams/pcd-services
+        - git switch master
+        - scripts/run-with-live-global-services.sh
+      - commands:
+        - cd ~/dev/pcdreams/pcd-services
+

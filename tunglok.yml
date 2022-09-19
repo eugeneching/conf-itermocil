@@ -1,0 +1,25 @@
+windows:
+  - name: tunglok
+    root: ~/dev
+    layout: tiled
+    panes:
+      - commands:
+        - cd ~/dev/tunglok/posconnect-services
+        - git switch develop
+        - rsrc/run.sh
+      - commands:
+        - cd ~/dev/tunglok/posconnect-services
+      - commands:
+        - cd ~/dev/tunglok/posconnect-services
+        - git switch develop
+        - rsrc/run-db.sh
+        - rsrc/run-print.sh
+      - commands:
+        - cd ~/dev/tunglok/posconnect-services
+        - rsrc/psql.sh
+      - commands:
+        - cd ~/dev/tunglok/posconnect-web-menu
+        - git switch master
+        - scripts/run.sh
+      - commands:
+        - cd ~/dev/tunglok/posconnect-web-menu
